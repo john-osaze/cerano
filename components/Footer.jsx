@@ -2,13 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Button from './Button';
 import { Separator } from "@/components/ui/separator"
-import { FaFacebook, FaXTwitter, FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
 import { CiTimer } from "react-icons/ci";
+import { HiMail } from "react-icons/hi";
 
 const Footer = () => {
     return (
         <section className="footer bg-gray-800 text-white relative h-[83vh]">
-            <footer className="flex flex-col items-center px-8 py-10 md:px-36 md:pt-16 page-footer gap-y-24 md:pb-8">
+            <footer className="flex flex-col items-center px-8 py-10 md:px-10 md:pt-14 lg:px-36 lg:pt-16 page-footer gap-y-24 md:pb-8">
                 <div className="footer-top text-center">
                     <p className="font-playfair text-xl">Love what we do?</p>
                     <h1 className="text-4xl md:text-6xl/8 mt-2 md:mt-8 font-bold">Join us now!</h1>
@@ -21,7 +22,7 @@ const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className="footer-btn hidden md:block">
+                    <div className="footer-btn hidden lg:block">
                         <button className="border border-slate-500 rounded-full px-10 py-5 ml-14 text-gray-300">Learn more</button>
                     </div>
 
@@ -53,14 +54,13 @@ const Footer = () => {
                             <FaSquareInstagram size={22} />
                         </Link>
                         <Link href={"/"}>
-                            <FaXTwitter size={22} />
+                            <HiMail size={25} />
                         </Link>
                     </div>
                 </div>
             </footer>
 
             <div className="footer-img hero bg-[url('/img/footer-bg.png')] bg-top bg-cover bg-no-repeat w-full py-36 px-20 absolute bottom-[0px] opacity-5 grayscale brightness-150">
-                {/* <Image src="/img/footer-bg.png" priority quality={100} width={1000} height={500} className="grayscale"></Image> */}
             </div>
         </section>
     )

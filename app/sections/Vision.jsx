@@ -20,9 +20,7 @@ export default function Vision() {
                     <div className="sm:max-w-lg">
                         <div className="">
                             <p className="my-8 text-lg text-gray-800">
-                                Don't miss out on this exclusive opportunity to earn from simply completing tasks on your phone. You
-                                can share with your friends as well earn from simply completing tasks on your phone
-                                can share with your friends as well.
+                                Our vision is to promote peace and security in our commnunities through empowerment programmes and seminars with the aim of eradicating youth restiveness and nurture them for global leadership.
                             </p>
                             <Button color="text-primary" text="Learn more" icon="/svg/right-arrow.svg" destination="/" />
                         </div>

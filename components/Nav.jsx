@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { CiMenuFries } from 'react-icons/ci';
+import { useEffect, useState } from 'react';
 
 const links = [
     {
@@ -30,32 +31,50 @@ const links = [
 ]
 
 export default function Nav() {
+    const [nav, setNav] = useState(false);
+
+    const scrollNav = () => {
+        if (window.scrollY >= 20) {
+            setNav(true)
+        } else{
+            setNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", scrollNav)
+
+        return ()=> {
+            window.addEventListener("scroll", scrollNav)
+        }
+    }, [])
+
     const pathname = usePathname();
     return (
-        <nav className="py-4 xl:py-4 nav-bar fixed top-0 w-full">
+        <nav className={nav ? "py-4 xl:py-4 nav-bar fixed top-0 w-full bg-white z-[100] shadow-2xl transition-all" : "py-4 xl:py-4 nav-bar fixed top-0 w-full bg-[transparent] transition-all"}>
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/">
-                    <Image src="/img/logo-white.png" alt="Cerano Logo" priority quality={100} width={175} height={175} />
+                    <Image src={nav ? "/img/logo.png" : "/img/logo-white.png"} alt="Cerano Logo" priority quality={100} width={175} height={175} />
                 </Link>
 
                 <div className="hidden xl:flex items-center gap-8">
                     <div className="flex gap-x-16 nav-menu">
                         {links.map((link, index) => {
-                            return <Link href={link.path} key={index} className={`text-white uppercase text-xs font-bold`}>
+                            return <Link href={link.path} key={index} className={nav ? "text-black uppercase text-xs font-bold hover:text-primary" : "text-white uppercase text-xs font-bold hover:text-primary"}>
                                 {link.name}
                             </Link>
                         })}
                     </div>
                 </div>
 
-                <div className="block md:hidden">
+                <div className="block lg:hidden">
                     <Sheet>
                         <SheetTrigger className="flex justify-center items-center">
-                            <CiMenuFries className="text-[32px] text-white" />
+                            <CiMenuFries className={nav ? "text-[32px] text-black" : "text-[32px] text-white"} />
                         </SheetTrigger>
 
                         <SheetContent className="flex flex-col">
-                            <div className="mt-16 mb-10 text-center text-2xl">
+                            <div className="mt-32 mb-10 text-center text-2xl">
                                 <Link href="/">
                                     <Image src="/img/logo-white.png" alt="Cerano Logo" priority quality={100} width={175} height={175} />
                                 </Link>
