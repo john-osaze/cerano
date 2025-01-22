@@ -1,6 +1,7 @@
 import Button from "@/components/Button"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Events() {
     return (
@@ -20,8 +21,9 @@ export default function Events() {
                         <div className="event-info text-black w-full lg:w-1/2">
                             <h2 className="font-playfair font-semibold text-lg mb-2">Emotan Secondary School Reachout</h2>
                             <span className="text-sm italic">February 10, 2019 - April 28, 2019</span>
-                            <p className="mt-4 mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh</p>
-                            <Button color="text-primary" text="More info" icon="/svg/right-arrow.svg" destination="/" />
+                            <p className="mt-4 mb-12">
+                                We reached out to Emotan Secondary School, provided academic support, mentorship, and resources. Through workshops and interactive sessions, we fostered a collaborative environment, inspiring students to excel academically and develop cultural love.</p>
+                            <Button color="text-primary" text="More info" icon="/svg/right-arrow.svg" destination="https://www.instagram.com/cerano_global" />
                         </div>
                     </div>
                     <Separator />
@@ -30,10 +32,11 @@ export default function Events() {
                             <Image src="/img/event-img-2.jpg" priority width={600} height={500} alt="subscribe-img" />
                         </div>
                         <div className="event-info text-black w-full lg:w-1/2">
-                            <h2 className="font-playfair font-semibold text-lg mb-2">Army Day Grammar School Reachout</h2>
+                            <h2 className="font-playfair font-semibold text-lg mb-2">Exclusive Interview with ITV</h2>
                             <span className="text-sm italic">February 10, 2019 - April 28, 2019</span>
-                            <p className="mt-4 mb-12">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
-                            <Button color="text-primary" text="More info" icon="/svg/right-arrow.svg" destination="/" />
+                            <p className="mt-4 mb-12">
+                                Our founder was specially invited for an exclusive interview with ITV where he shared valuable insights, achievements, and future plans with a broad audience. He also contributed to meaningful discussions as well as highlighted key solutions to some problems in the state.</p>
+                                <Button color="text-primary" text="More info" icon="/svg/right-arrow.svg" destination="https://www.instagram.com/cerano_global" />
                         </div>
                     </div>
                     <Separator />
@@ -42,10 +45,11 @@ export default function Events() {
                             <Image src="/img/event-img-3.jpg" priority width={600} height={500} alt="subscribe-img" />
                         </div>
                         <div className="event-info text-black w-full lg:w-1/2">
-                            <h2 className="font-playfair font-semibold text-lg mb-2">Exclusive Interview with ITV</h2>
+                            <h2 className="font-playfair font-semibold text-lg mb-2">Army Day Grammar School Reachout</h2>
                             <span className="text-sm italic">February 10, 2019 - April 28, 2019</span>
-                            <p className="mt-4 mb-12">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna.</p>
-                            <Button color="text-primary" text="More info" icon="/svg/right-arrow.svg" destination="/" />
+                            <p className="mt-4 mb-12">
+                                In this reachout, we hosted a cultural campaign that was aimed celebrating the rich cultural heritage of Edo. This initiative enlightened students on the importance of traditional values and through culture-themed showcases, we inspired students to embrace their roots.</p>
+                                <Button color="text-primary" text="More info" icon="/svg/right-arrow.svg" destination="/https://www.instagram.com/cerano_global" />
                         </div>
                     </div>
 

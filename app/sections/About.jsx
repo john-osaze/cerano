@@ -48,7 +48,7 @@ export default function About() {
                                 </li>
                             </ul>
 
-                            <Button color="text-primary" text="Learn more" icon="/svg/right-arrow.svg" destination="/" />
+                            <Button color="text-primary" text="Learn more" icon="/svg/right-arrow.svg" destination="https://www.linkedin.com/in/cerano-global-117197346" />
                         </div>
                     </div>
                 </div>

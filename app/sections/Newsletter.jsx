@@ -24,7 +24,7 @@ export default function Newsletter() {
                         </h1>
                         <div className="pl-0 lg:pl-10">
                             <p className="my-8 text-lg text-gray-800">
-                                Stay updated with our newsletter and be the first to know about the latest updates, exclusive offers, and insights straight to your inbox. Join our official list and never miss out!
+                                Stay updated with our newsletter and be the first to know about the latest updates, and insights straight to your inbox. Join our official list and never miss out!
                             </p>
                             <Button color="text-primary" text="Join now" icon="/svg/right-arrow.svg" destination="/" />
                         </div>

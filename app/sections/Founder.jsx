@@ -19,10 +19,10 @@ export default function Founder() {
                             </p>
 
                             <p className="my-8 text-lg text-gray-800">
-                                As CEO of Cerano International, Obakpolor demonstrates entrepreneurial acumen and a forward-thinking approach, contributing to economic growth and creating opportunities. He is married with children and a role model for those seeking to blend tradition with innovation and service with leadership.
+                                As CEO of Cerano Global, Obakpolor demonstrates entrepreneurial acumen and a forward-thinking approach, contributing to economic growth and creating opportunities. He is married with children and a role model for those seeking to blend tradition with innovation and service with leadership.
                             </p>
 
-                            <Button color="text-primary" text="Learn more" icon="/svg/right-arrow.svg" destination="/" />
+                            <Button color="text-primary" text="Learn more" icon="/svg/right-arrow.svg" destination="https://www.linkedin.com/in/cerano-global-117197346" />
                         </div>
                     </div>
 
