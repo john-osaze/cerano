@@ -8,7 +8,7 @@ export default function Hero() {
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
 
     return (
-        <section className="hero bg-[url('/img/hero-bg.jpg')] bg-center bg-cover bg-no-repeat h-[95vh] md:h-[90vh] w-full py-56 px-4">
+        <section className="hero bg-[url('/img/hero-bg.jpg')] bg-center bg-cover bg-no-repeat h-[95vh] md:h-[90vh] w-full py-56 px-4" id="home">
             <div className="container mx-auto text-white">
                 <span className="font-playfair">{today.toLocaleDateString(undefined, options)} &mdash; {oneWeekLater.toLocaleDateString(undefined, options)}</span>
                 <h1 className="font-bold text-6xl md:text-7xl  mt-4 mb-6">

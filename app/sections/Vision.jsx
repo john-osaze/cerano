@@ -1,9 +1,8 @@
 import Button from "@/components/Button"
-// import Image from "next/image"
 
 export default function Vision() {
     return (
-        <section className="container our-vision my-10">
+        <section className="container our-vision my-10" id="vision">
             <div className="py-14 my-14 vision-wrapper">
                 <div className="flex flex-wrap md:flex-nowrap justify-between items-center mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">

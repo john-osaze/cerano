@@ -1,10 +1,9 @@
 import Button from "@/components/Button"
 import Image from "next/image"
-import DashIcon from "../../public/img/dash.png"
 
 export default function Founder() {
     return (
-        <section className="container about-us">
+        <section className="container" id="founder">
             <div className="about-wrapper py-0 mt-0 mb-12 md:my-14 lg:py-14">
                 <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="pt-8 lg:pt-0 sm:max-w-lg">

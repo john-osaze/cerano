@@ -17,13 +17,13 @@ const Footer = () => {
 
                 <div className="footer-mid w-full flex flex-col md:flex-row justify-between items-center">
                     <div className="footer-logo">
-                        <Link href="https://www.facebook.com/profile.php?id=61571856807113">
+                        <Link href="/">
                             <Image src="/img/logo-white.png" alt="Cerano Logo" priority quality={100} width={200} height={175} />
                         </Link>
                     </div>
 
                     <div className="footer-btn hidden lg:block">
-                        <Link href="">
+                        <Link href="https://www.facebook.com/profile.php?id=61571856807113">
                             <button className="border border-slate-500 rounded-full px-10 py-5 ml-14 text-gray-300">Learn more</button>
                         </Link>
                     </div>

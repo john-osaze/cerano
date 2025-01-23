@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section className="hero bg-[url('/img/contact-bg.jpg')] bg-center bg-cover bg-no-repeat h-[75vh] lg:h-[90vh] w-full pt-16 pb-10 px-8 md:py-20 md:px-12 lg:py-36 lg:px-20">
+        <section className="hero bg-[url('/img/contact-bg.jpg')] bg-center bg-cover bg-no-repeat h-[75vh] lg:h-[90vh] w-full pt-16 pb-10 px-8 md:py-20 md:px-12 lg:py-36 lg:px-20" id="contact">
             <div className="container text-black bg-white/90 w-full md:w-4/5 lg:w-3/5 p-8 lg:p-20 backdrop-blur-xl backdrop-opacity-10 backdrop-invert">
                 <h1 className="font-playfair text-primary font-bold text-3xl mb-2">
                     Get in touch

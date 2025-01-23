@@ -1,11 +1,10 @@
 import Button from "@/components/Button"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function Events() {
     return (
-        <div className="bg-white">
+        <section className="bg-white" id="events">
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <h2 className="text-4xl/8 font-bold tracking-tight text-black font-playfair text-primary text-center mb-6">Our Events</h2>
                 <p className="text-center text-pretty text-black mb-16">
@@ -55,6 +54,6 @@ export default function Events() {
 
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

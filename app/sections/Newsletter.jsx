@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Newsletter() {
     return (
-        <section className="container about-us">
+        <section className="container newsletter" id="newsletter">
             <div className="about-wrapper mt-0 mb-14 py-14">
                 <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="about-content mb-14 lg:mb-0">

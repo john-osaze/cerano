@@ -4,7 +4,7 @@ import DashIcon from "../../public/img/dash.png"
 
 export default function About() {
     return (
-        <section className="container about-us">
+        <section className="container about-us" id="about">
             <div className="about-wrapper py-0 mt-0 mb-12 lg:my-14 lg:py-14">
                 <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="about-content">
